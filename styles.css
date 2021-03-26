@@ -1,0 +1,103 @@
+body {
+  background-color: #674baf;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  color: white;
+}
+
+figure {
+  margin: 0;
+}
+
+.HLP__header {
+  height: 78px;
+  margin: 30px 0px 0px 32px;
+}
+
+.HLP__header .HLP__header-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HLP__header .HLP__header-figure img {
+  width: 37vw;
+}
+
+.HLP__mockup {
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.HLP__mockup img {
+  width: 80vw;
+}
+
+.HLP__comunity {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.HLP__comunity .HLP__comunity-button-register {
+  color: #674baf;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 12px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 8px 12px -8px rgba(0, 0, 0, 0.75);
+}
+
+.HLP__comunity .HLP__comunity-button-register:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-color: #e882e8;
+  color: white;
+}
+
+.HLP__comunity .HLP__comunity-h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.HLP__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+.HLP__address i {
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 33px;
+  margin: 1rem;
+}
+
+.HLP__address i:hover {
+  background-color: #e882e8;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
