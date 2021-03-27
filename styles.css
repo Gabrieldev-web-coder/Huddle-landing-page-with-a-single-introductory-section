@@ -48,6 +48,10 @@ figure {
   line-height: 1.5rem;
 }
 
+.HLP__comunity .HLP__comunity-p {
+  padding: 0rem 10% 0rem 10%;
+}
+
 .HLP__comunity .HLP__comunity-button-register {
   color: #674baf;
   background-color: white;
@@ -95,9 +99,61 @@ figure {
 }
 
 .HLP__address i:hover {
-  background-color: #e882e8;
+  border-color: #e882e8;
+  color: #e882e8;
   -webkit-transition: .2s;
   transition: .2s;
-  color: white;
+}
+
+@media screen and (min-width: 575px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "head head head" "mock comu comu" ".     .   foot";
+  }
+  body .HLP__header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: head;
+  }
+  body .HLP__mockup {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: mock;
+  }
+  body .HLP__comunity {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: comu;
+  }
+  body .HLP__footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: foot;
+  }
+  .HLP__header .HLP__header-figure-img {
+    width: 30vw;
+  }
+  .HLP__mockup {
+    text-align: center;
+    margin: 19% 0% 20% 6%;
+  }
+  .HLP__mockup img {
+    width: 50vw;
+  }
+  .HLP__address {
+    font-size: 12px;
+  }
+  .HLP__comunity-p {
+    padding: 0rem 10% 0rem 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

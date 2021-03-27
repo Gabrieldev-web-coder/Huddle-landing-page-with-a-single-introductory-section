@@ -38,6 +38,7 @@ figure{margin: 0;}
     font-family: $body-font;
     font-weight: nth($font-weight,1);
     line-height: 1.5rem;
+    .HLP__comunity-p{padding: 0rem 10% 0rem 10%;}
     .HLP__comunity-button-register{
         color: nth($primary-color,1);
         background-color: white;
@@ -72,8 +73,40 @@ figure{margin: 0;}
     margin: 1rem;
 }
     i:hover{
-        background-color:nth($primary-color,2);
+        border-color: nth($primary-color,2);
+        color: nth($primary-color,2);
         transition: .2s;
-        color: white;
     }
+}
+
+@media screen and (min-width:575px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "head head head"
+        "mock comu comu"
+        ".     .   foot";
+        .HLP__header{grid-area:head;}
+        .HLP__mockup{grid-area:mock;}
+        .HLP__comunity{grid-area:comu;}
+        .HLP__footer{grid-area:foot;}
+    }
+
+    .HLP__header{.HLP__header-figure-img{width: 30vw;}}
+    .HLP__mockup{
+        text-align: center;
+        margin: 19% 0% 20% 6%;
+        img{width: 50vw;}
+    }
+
+    .HLP__address{font-size: 12px;}
+    .HLP__comunity-p {padding: 0rem 10% 0rem 10%;}
+}
+
+@media screen and (min-width:768px){
+    
 }
