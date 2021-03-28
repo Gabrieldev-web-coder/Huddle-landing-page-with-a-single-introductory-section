@@ -163,6 +163,9 @@ figure {
     -webkit-column-gap: 1.8rem;
             column-gap: 1.8rem;
   }
+  body .HLP__header .HLP__header-figure img {
+    width: 15vw;
+  }
   body .HLP__comunity {
     text-align: left;
     margin-left: 0rem;
@@ -176,7 +179,21 @@ figure {
     margin: 2rem 1rem 2rem 0rem;
   }
   body .HLP__mockup {
-    margin: 5% 0% 20% 6%;
+    margin: 5% 0% 5% 6%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .HLP__comunity .HLP__comunity-h2 {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1227px) {
+  .HLP__comunity .HLP__comunity-h2 {
+    line-height: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -114,6 +114,12 @@ figure{margin: 0;}
 @media screen and (min-width:768px){
     body{
         column-gap: 1.8rem;
+        .HLP__header{
+            .HLP__header-figure{
+                img {width: 15vw;}
+            } 
+            
+        } 
         .HLP__comunity{
             text-align: left; 
             margin-left: 0rem;
@@ -122,8 +128,24 @@ figure{margin: 0;}
             
             .HLP__comunity-button-register{width: 150px; margin: 2rem 1rem 2rem 0rem;}
         }    
-        .HLP__mockup {
-            margin: 5% 0% 20% 6%;
-        }
+        .HLP__mockup {margin: 5% 0% 5% 6%;}
     }
+}
+
+@media screen and (min-width:1024px){
+    .HLP__comunity{
+        .HLP__comunity-h2{
+            line-height: 3rem;
+            font-size: 2rem;
+        }
+    } 
+}
+
+@media screen and (min-width:1227px){
+    .HLP__comunity{
+        .HLP__comunity-h2 {
+            line-height: 3.5rem;
+            font-size: 2.5rem;
+        }
+    } 
 }
