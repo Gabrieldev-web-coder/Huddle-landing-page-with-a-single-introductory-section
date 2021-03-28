@@ -29,7 +29,7 @@ figure {
 }
 
 .HLP__header .HLP__header-figure img {
-  width: 37vw;
+  width: 28vw;
 }
 
 .HLP__mockup {
@@ -106,6 +106,9 @@ figure {
 }
 
 @media screen and (min-width: 575px) {
+  .HLP__header .HLP__header-figure img {
+    width: 18vw;
+  }
   body {
     background-image: url(images/bg-desktop.svg);
     background-size: cover;
@@ -115,7 +118,7 @@ figure {
         grid-template-columns: auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "head head head" "mock comu comu" ".     .   foot";
+        grid-template-areas: "head head head" "mock comu comu" ".     .   foot";
   }
   body .HLP__header {
     -ms-grid-row: 1;
@@ -133,18 +136,16 @@ figure {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: comu;
+    margin-left: .4rem;
   }
   body .HLP__footer {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     grid-area: foot;
   }
-  .HLP__header .HLP__header-figure-img {
-    width: 30vw;
-  }
   .HLP__mockup {
     text-align: center;
-    margin: 19% 0% 20% 6%;
+    margin: 0% 0% 20% 6%;
   }
   .HLP__mockup img {
     width: 50vw;
@@ -154,6 +155,28 @@ figure {
   }
   .HLP__comunity-p {
     padding: 0rem 10% 0rem 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    -webkit-column-gap: 1.8rem;
+            column-gap: 1.8rem;
+  }
+  body .HLP__comunity {
+    text-align: left;
+    margin-left: 0rem;
+    padding: 5% 10% 5% 10%;
+  }
+  body .HLP__comunity .HLP__comunity-p {
+    padding: 0;
+  }
+  body .HLP__comunity .HLP__comunity-button-register {
+    width: 150px;
+    margin: 2rem 1rem 2rem 0rem;
+  }
+  body .HLP__mockup {
+    margin: 5% 0% 20% 6%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -17,13 +17,11 @@ figure{margin: 0;}
 .HLP__header{
     height: 78px;
     margin: 30px 0px 0px 32px;
-
-
     .HLP__header-figure{
         display: flex;
         justify-content: end;
         align-items: center;
-        img{width: 37vw;}
+        img{width: 28vw;}
     }
 }
 
@@ -80,6 +78,13 @@ figure{margin: 0;}
 }
 
 @media screen and (min-width:575px){
+
+    .HLP__header{
+        .HLP__header-figure img {
+            width: 18vw;
+        }
+    } 
+
     body{
         background-image: url(images/bg-desktop.svg);
         background-size: cover;
@@ -92,14 +97,13 @@ figure{margin: 0;}
         ".     .   foot";
         .HLP__header{grid-area:head;}
         .HLP__mockup{grid-area:mock;}
-        .HLP__comunity{grid-area:comu;}
+        .HLP__comunity{grid-area:comu; margin-left: .4rem;}
         .HLP__footer{grid-area:foot;}
     }
 
-    .HLP__header{.HLP__header-figure-img{width: 30vw;}}
-    .HLP__mockup{
+        .HLP__mockup{
         text-align: center;
-        margin: 19% 0% 20% 6%;
+        margin: 0% 0% 20% 6%;
         img{width: 50vw;}
     }
 
@@ -108,5 +112,18 @@ figure{margin: 0;}
 }
 
 @media screen and (min-width:768px){
-    
+    body{
+        column-gap: 1.8rem;
+        .HLP__comunity{
+            text-align: left; 
+            margin-left: 0rem;
+            padding: 5% 10% 5% 10%;
+            .HLP__comunity-p{padding: 0;}
+            
+            .HLP__comunity-button-register{width: 150px; margin: 2rem 1rem 2rem 0rem;}
+        }    
+        .HLP__mockup {
+            margin: 5% 0% 20% 6%;
+        }
+    }
 }
